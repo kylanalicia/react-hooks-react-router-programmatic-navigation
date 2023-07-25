@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <Navbar setIsLoggedIn={setIsLoggedIn} />
-      {/* <Switch> */}
+      <Switch>
         <Route exact path="/about">
           <About />
         </Route>
@@ -21,7 +21,7 @@ function App() {
         <Route exact path="/">
           <Home isLoggedIn={isLoggedIn} />
         </Route>
-      {/* </Switch> */}
+      </Switch>
     </div>
   );
 }
